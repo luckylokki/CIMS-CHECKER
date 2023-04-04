@@ -1,0 +1,13 @@
+[Unit]
+Description=cims-server
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/etc/cims-server
+ExecStart=/etc/cims-server/venv/bin/python3 server.py
+TimeoutSec=30
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
