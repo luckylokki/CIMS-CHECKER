@@ -49,6 +49,7 @@ Client part
 Edit config-client.ini:
 
 .. code-block::
+
     [agent-config]
     name = Client1 #Name of your client server
     log_pwd = /var/log/ #folder where will be created folder with logs
